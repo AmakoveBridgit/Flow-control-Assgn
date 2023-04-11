@@ -5,8 +5,8 @@ fun main() {
 
 
 
-    getDrink(5)
-    getDrink(7)
+    getDrink(3)
+    getDrink(8)
     getDrink(18)
     printNumb()
 
@@ -32,9 +32,9 @@ fun nameArray(names:Array<String>):Int{
 //question3
 fun getDrink(guests:Int){
     when(guests){
-        1,5-> println("serves milk")
-        7,14-> println("serves cocacola")
-        else-> println("serves fanta orange")
+     in  0..5 -> println("serves milk")
+    in  7..14-> println("fanta orange")
+        else-> println("serves cocacola")
     }
 }
 //Question4
